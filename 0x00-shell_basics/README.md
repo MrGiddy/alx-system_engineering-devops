@@ -10,3 +10,4 @@ Shell scripts with commands to:
 * Create a directory named my_first_directory inside /tmp/ directory
 * Move file "betty" from /tmp/ to /tmp/my_first_directory
 * Delete "betty" from /tmp/my_first_directory
+* Delete directory my_first_directory in /tmp/
