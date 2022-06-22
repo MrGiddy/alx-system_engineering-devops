@@ -4,15 +4,16 @@ Shell scripts with commands to:
 * Display the content list of current working directory in long format
 * Display current directory contents, including hidden files
 * Display current directory contents
-      i.   Long format
-      ii.  Numeric display of user and group ID's
-      iii. Hidden files (starting with .)
+    i.   Long format
+    ii.  Numeric display of user and group ID's
+    iii. Hidden files (starting with .)
 * Create a directory named my_first_directory inside /tmp/ directory
 * Move file "betty" from /tmp/ to /tmp/my_first_directory
 * Delete "betty" from /tmp/my_first_directory
 * Delete directory my_first_directory in /tmp/
 * Change working directory to previous one
 * List all files, including hidden ones in long format in
-      i.   Current directory
-      ii.  Parent of working directory
-      iii. /boot directory
+     i.   Current directory
+     ii.  Parent of working directory
+     iii. /boot directory
+* Print the file type of file named "iamafile" in /tmp 
