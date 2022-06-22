@@ -7,3 +7,4 @@ Shell scripts with commands to:
       i.   Long format
       ii.  Numeric display of user and group ID's
       iii. Hidden files (starting with .)
+* Create a directory named my_first_directory inside /tmp/ directory
