@@ -12,3 +12,7 @@ Shell scripts with commands to:
 * Delete "betty" from /tmp/my_first_directory
 * Delete directory my_first_directory in /tmp/
 * Change working directory to previous one
+* List all files, including hidden ones in long format in
+      i.   Current directory
+      ii.  Parent of working directory
+      iii. /boot directory
