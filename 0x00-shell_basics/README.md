@@ -11,3 +11,4 @@ Shell scripts with commands to:
 * Move file "betty" from /tmp/ to /tmp/my_first_directory
 * Delete "betty" from /tmp/my_first_directory
 * Delete directory my_first_directory in /tmp/
+* Change working directory to previous one
