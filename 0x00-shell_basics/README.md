@@ -9,3 +9,4 @@ Shell scripts with commands to:
       iii. Hidden files (starting with .)
 * Create a directory named my_first_directory inside /tmp/ directory
 * Move file "betty" from /tmp/ to /tmp/my_first_directory
+* Delete "betty" from /tmp/my_first_directory
