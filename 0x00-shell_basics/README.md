@@ -8,3 +8,4 @@ Shell scripts with commands to:
       ii.  Numeric display of user and group ID's
       iii. Hidden files (starting with .)
 * Create a directory named my_first_directory inside /tmp/ directory
+* Move file "betty" from /tmp/ to /tmp/my_first_directory
