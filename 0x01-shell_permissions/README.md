@@ -23,5 +23,12 @@ Write a script that adds execute permission to the owner and group owner, and re
 
 ## task 7
 Write a script that adds execution permission to the owner, the group owner and the other users, to the file "hello"
-    * The file "hello" will be in the working directory
-    * You are not allowed to use commas for this script
+* The file "hello" will be in the working directory
+* You are not allowed to use commas for this script
+
+## task 8
+Write a script that sets the permission to the file "hellp" as follows
+* Owner: no permission at all
+* Group: no permission at all
+* Other users: all the permissions
+The file hello will be in the working directory. You are not allowed to use commas for this script
