@@ -14,3 +14,6 @@ Write a script that changes the owner of the file named "hello" to "betty"
 
 ## task 4
 Write a script that creates an empty file called "hello"
+
+## task 5
+Write a script that adds execute permission to the owner of the file "hello" in current working directory
