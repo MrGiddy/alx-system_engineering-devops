@@ -61,3 +61,7 @@ Write a script that changes the owner to "vincent" and the group owner to "staff
 Write a script that changes the owner and the group of "_hello" to "vincent" and "staff" respectively
 * The file "_hello" is in the working directory
 * The file "_hello" is a symbolic link
+
+## task 16
+Write a script that changes the owner of the file "hello" to "betty" only if it is owned by the user "guillaume"
+* The file "hello" will be in the workind directory
