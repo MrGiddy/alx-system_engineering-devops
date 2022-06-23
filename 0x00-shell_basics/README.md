@@ -20,3 +20,4 @@ Shell scripts with commands to:
 * Create symbolic link to /bin/ls named __ls__ in the current working directory
 * Copy all HTML files from current working directory to parent of the working directory, but only copy files that do not exist in the parent of the working directory or are newer than the versions in the parent of the working directory
 * Move all files beginning with an uppercase letter to the directory /tmp/u
+*Delete all files ending with ~ in the current working directory
