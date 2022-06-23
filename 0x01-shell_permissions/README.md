@@ -64,4 +64,7 @@ Write a script that changes the owner and the group of "_hello" to "vincent" and
 
 ## task 16
 Write a script that changes the owner of the file "hello" to "betty" only if it is owned by the user "guillaume"
-* The file "hello" will be in the workind directory
+* The file "hello" will be in the working directory
+
+## task 17
+* Write a script that will play the Star Wars IV episode in the terminal
