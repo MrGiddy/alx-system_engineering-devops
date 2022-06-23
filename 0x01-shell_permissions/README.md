@@ -17,3 +17,6 @@ Write a script that creates an empty file called "hello"
 
 ## task 5
 Write a script that adds execute permission to the owner of the file "hello" in current working directory
+
+## task 6
+Write a script that adds execute permission to the owner and group owner, and read permission to other users, to the file "hello"
