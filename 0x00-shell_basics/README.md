@@ -22,3 +22,8 @@ Shell scripts with commands to:
 * Move all files beginning with an uppercase letter to the directory /tmp/u
 * Delete all files ending with ~ in the current working directory
 * Create directories welcome/, welcome/to/ and welcome/to/scool in the current directory. Use only two spaces(and lines) in the script
+* List all files and directories of the current directory separated by commas,
+    i.   Directory names should end swith slash (/)
+    ii.  Hidden files should be listed
+    iii. Listing should be alpha ordered, except for directories . and .. which are listed at the beginning
+    iv.  Only digits and letters should be sorted
