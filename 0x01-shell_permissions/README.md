@@ -27,8 +27,14 @@ Write a script that adds execution permission to the owner, the group owner and 
 * You are not allowed to use commas for this script
 
 ## task 8
-Write a script that sets the permission to the file "hellp" as follows
+Write a script that sets the permission to the file "hello" as follows
 * Owner: no permission at all
 * Group: no permission at all
 * Other users: all the permissions
-The file hello will be in the working directory. You are not allowed to use commas for this script
+
+The file "hello" will be in the working directory. You are not allowed to use commas for this script
+
+## task 9
+Write a script that sets the mode of the file "hello" to this: -rwxr-x-wx
+* The file "hello" will be in the working directory
+* You are not allowed to use commas for this script
