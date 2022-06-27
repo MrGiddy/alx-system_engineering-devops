@@ -8,3 +8,5 @@ Write a script that displays a confused smiley "(Ôo)'.
 
 ## task 2-hellofile
 Display the content of the /etc/passwd file.
+
+### task 3-twofiles
