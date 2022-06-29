@@ -16,7 +16,7 @@ Create a script that counts the number of directories in the PATH.
 ### task 4-global_variables
 Create a script that lists environment variables.
 
-### task 4-local_variables
+### task 5-local_variables
 Create a script that lists all local variables and environment variables, and functions.
 
 ### task 6-create_local_variable
@@ -45,3 +45,11 @@ Write a script that displays the result of BREATH to the power LOVE
 Write a script that converts a number from base 2 to base 10.
 	- The number in base 2 is stored in the environment variable BINARY
 	- The script should display the number in base 10, followed by a new line
+
+### task 12-combinations
+Create a script that prints all possible combinations of two letters, except oo.
+	- Letters are lower cases, from a to z
+	- One combination per line
+	- The output should be alpha ordered, starting with aa
+	- Do not print oo
+	- Your script file should contain maximum 64 charactersCreate a script that prints all possible combinations of two letters, except oo.
