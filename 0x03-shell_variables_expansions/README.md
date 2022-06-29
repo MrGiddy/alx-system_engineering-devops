@@ -23,3 +23,8 @@ Create a script that lists all local variables and environment variables, and fu
 Create a script that creates a new local variable.
 	- Name: BEST
 	- Value: School
+
+### task 7-create_global_variable
+Create a script that creates a new global variable.
+	- Name: BEST
+	- Value: School
