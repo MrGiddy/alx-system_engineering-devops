@@ -21,3 +21,5 @@
 
 9-John_Doe - Write a script that sets the mode of the file hello to this:
 * -rwxr-x-wx
+
+10-Write a sctipt that sets the mode of the file hello the same as olleh's mode.
