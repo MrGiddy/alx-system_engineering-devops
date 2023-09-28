@@ -1,2 +1,2 @@
 #!/binbash
-sudo chown --from=guillaume: betty: hello
+chown --from=guillaume betty hello
