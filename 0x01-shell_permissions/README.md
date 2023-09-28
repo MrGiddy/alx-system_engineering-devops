@@ -9,3 +9,5 @@
 4-empty - Write a sctipt that creates an empty file hello.
 
 5-execute - Write a script that adds execute permission to the owner of the file hello. The file hello will be in the working directory.
+
+6-multiple_permissions - Write a script that adds execute permission to the owner and the group owner, and read permission to other users, to the file hello. 
