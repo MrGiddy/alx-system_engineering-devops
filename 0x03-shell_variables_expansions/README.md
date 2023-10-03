@@ -22,3 +22,7 @@
 * POWER nd DIVIDE are environment variables
 
 10-love_exponent_breath - Write a script that displays the result of BREATH to the poert LOVE
+
+11-binary_to_decimal - Write a script that converst a number from base to to base 10.
+* The number in base 2 is stored in the environment variable BINARY
+* The script should display the number in base 10, followed by a new line
