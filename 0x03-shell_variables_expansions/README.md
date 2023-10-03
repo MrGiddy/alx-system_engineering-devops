@@ -20,3 +20,5 @@
 
 9-divide_and_rule - Write a script that prints the result of POWER diveded by DIVIDE, follwed by a new line.
 * POWER nd DIVIDE are environment variables
+
+10-love_exponent_breath - Write a script that displays the result of BREATH to the poert LOVE
