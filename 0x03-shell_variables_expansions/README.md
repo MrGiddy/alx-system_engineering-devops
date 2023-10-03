@@ -26,3 +26,8 @@
 11-binary_to_decimal - Write a script that converst a number from base to to base 10.
 * The number in base 2 is stored in the environment variable BINARY
 * The script should display the number in base 10, followed by a new line
+
+12-combinations
+
+13-print_float - Wtite a script that prints a number with two decimal places, followed by a new line.
+* The number will be stored in the environment variable NUM.
