@@ -24,3 +24,7 @@
 * The current and parent directories should not be taken into account
 * Hidden directories should be counted
 
+
+
+21-reverse - Write a script that reverse its input
+
