@@ -66,9 +66,14 @@ Display all the lines in the file /etc/passwd that do not contain the pattern bi
 ### [18-letteronly](https://github.com/MrGiddy/alx-system_engineering-devops/blob/main/0x02-shell_redirections/18-letteronly)
 Display all lines of the file /etc/ssh/ssh_config starting with a letter
 
-### 21-reverse
+### [19-AZ](https://github.com/MrGiddy/alx-system_engineering-devops/blob/main/0x02-shell_redirections/19-AZ)
+Replace all characters A and c from input to Z and e respectively.
+
+### [20-hiago](https://github.com/MrGiddy/alx-system_engineering-devops/blob/main/0x02-shell_redirections/20-hiago)
+
+### [21-reverse](https://github.com/MrGiddy/alx-system_engineering-devops/blob/main/0x02-shell_redirections/21-reverse)
 Write a script that reverse its input
 
-### 22-users_and_homes
+### [22-users_and_homes](https://github.com/MrGiddy/alx-system_engineering-devops/blob/main/0x02-shell_redirections/22-users_and_homes)
 Write a script that displays all users and their home directories, sorted by users.
 
