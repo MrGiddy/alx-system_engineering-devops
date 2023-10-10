@@ -38,7 +38,7 @@ Write a script that counts the number of directories and sub-directories in the 
 * The current and parent directories should not be taken into account
 * Hidden directories should be counted
 
-### [12-newest_files](https://github.com/MrGiddy/alx-system_engineering-devops/blob/main/0x02-shell_redirections/12-newestfiles)
+### [12-newest_files](https://github.com/MrGiddy/alx-system_engineering-devops/blob/main/0x02-shell_redirections/12-newest_files)
 Create a script that displays the 10 newest files in the directory.
 
 Requirements:
