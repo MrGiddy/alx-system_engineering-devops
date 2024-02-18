@@ -1,4 +1,4 @@
-# Command line for the wi
+# Command line for the win
 
 # Background Context
 [CMD CHALLENGE](https://cmdchallenge.com/) is a pretty cool game challenging you on Bash skills. Everything is done via the command line and the questions are becoming increasingly complicated. It’s a good training to improve your command line skills!
@@ -19,7 +19,7 @@ In addition to completing the project tasks and submitting the required screensh
 * [SFTP Guide](https://man.openbsd.org/sftp)
 * [SFTP File Transfer Tutorial](https://www.digitalocean.com/community/tutorials/how-to-use-sftp-to-securely-transfer-files-with-a-remote-server)
 
-***Here are the steps to follow**:
+### Here are the steps to follow:
 
 * Take the ```screenshots``` of the completed levels as mentioned in the ```general``` requirements.
 * Open a terminal or command prompt on your local machine.
@@ -32,8 +32,23 @@ In addition to completing the project tasks and submitting the required screensh
 **NOTE** :
 * The screenshoots of completed level should be inside the dir ```/root/alx-system_engineering-devops/command_line_for_the_win/```
 
+### These are the steps I took:
+
+- Copy ```SFTP command``` from the sandbox
+* Use the SFTP command in my local terminal
+* Use ```cd``` to navigate remote
+    * ```sftp> cd alx-system_engineering-devops```
+    * ```sftp> cd command_line_for_the_win```
+* Use ```lcd``` to navigate local
+    * ```sftp> lcd command_line_for_the_win```
+* Upload all JPEG files in local to remote
+    * ```sftp> put *.jpg```
+* Upload all PNG files in local to remote
+    * ```sftp> put *.PNG```
+* ```git add *; git commit -m "my commit message"; git push```;
+
 # Tasks
-### 0. First 9 tasks - [0-first_9_tasks.jpg](),[0-first_9_tasks.png]()
+### 0. First 9 tasks
 Complete the first 9 tasks.
 
 ### 1. Next 9 tasks
