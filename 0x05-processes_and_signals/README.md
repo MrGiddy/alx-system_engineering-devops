@@ -172,7 +172,6 @@ sylvain@ubuntu$
 Note that I ```ctrl+c``` (killed) the Bash script in the example.
 
 ### 5. Don't stop me now!
-mandatory
 We stopped our ```4-to_infinity_and_beyond``` process using ```ctrl+c``` in the previous task, there is actually another way to do this.
 
 Write a Bash script that stops ```4-to_infinity_and_beyond``` process.
@@ -211,7 +210,6 @@ sylvain@ubuntu$
 I opened 2 terminals in this example, started by running my ```4-to_infinity_and_beyond``` Bash script in terminal #0 and then moved on terminal #1 to run ```5-dont_stop_me_now```. We can then see in terminal #0 that my process has been terminated.
 
 ### 6. Stop me if you can
-mandatory
 Write a Bash script that stops ```4-to_infinity_and_beyond``` process.
 
 Requirements:
@@ -242,3 +240,39 @@ sylvain@ubuntu$ ./6-stop_me_if_you_can
 sylvain@ubuntu$ 
 ```
 I opened 2 terminals in this example, started by running my ```4-to_infinity_and_beyond``` Bash script in terminal #0 and then moved on terminal #1 to run ```6-stop_me_if_you_can```. We can then see in terminal #0 that my process has been terminated.
+
+### 7. Highlander
+Write a Bash script that displays:
+
+* ```To infinity and beyond``` indefinitely
+* With a ```sleep 2``` in between each iteration
+* ```I am invincible!!!``` when receiving a ```SIGTERM``` signal
+
+Make a copy of your ```6-stop_me_if_you_can``` script, name it ```67-stop_me_if_you_can```, that kills the ```7-highlander``` process instead of the ```4-to_infinity_and_beyond``` one.
+
+Terminal #0
+```
+sylvain@ubuntu$ ./7-highlander
+To infinity and beyond
+To infinity and beyond
+I am invincible!!!
+To infinity and beyond
+I am invincible!!!
+To infinity and beyond
+To infinity and beyond
+To infinity and beyond
+I am invincible!!!
+To infinity and beyond
+^C
+sylvain@ubuntu$ 
+```
+
+Terminal #1
+```
+sylvain@ubuntu$ ./67-stop_me_if_you_can 
+sylvain@ubuntu$ ./67-stop_me_if_you_can
+sylvain@ubuntu$ ./67-stop_me_if_you_can
+sylvain@ubuntu$ 
+```
+
+I started ```7-highlander``` in Terminal #0 and then run ```67-stop_me_if_you_can``` in terminal #1, for every iteration we can see ```I am invincible!!!``` appearing in terminal #0.
