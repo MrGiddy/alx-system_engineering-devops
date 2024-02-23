@@ -116,7 +116,6 @@ sylvain@ubuntu$
 ```
 
 ### 2. Show your Bash PID
-mandatory
 Using your previous exercise command, write a Bash script that displays lines containing the bash word, thus allowing you to easily get the PID of your Bash process.
 
 Requirements:
@@ -132,3 +131,23 @@ sylvain   4479  0.0  0.1  10460   912 pts/0    S+   03:40   0:00                
 sylvain@ubuntu$ 
 ```
 Here we can see that my Bash PID is ```4404```.
+
+### 3. Show your Bash PID made easy
+Write a Bash script that displays the PID, along with the process name, of processes whose name contain the word ```bash```.
+
+Requirements:
+
+* You cannot use ```ps```
+```
+sylvain@ubuntu$ ./3-show_your_bash_pid_made_easy
+4404 bash
+4555 bash
+sylvain@ubuntu$ ./3-show_your_bash_pid_made_easy
+4404 bash
+4557 bash
+sylvain@ubuntu$ 
+```
+
+Here we can see that:
+* For the first iteration: ```bash``` PID is ```4404``` and that the ```3-show_your_bash_pid_made_easy``` script PID is ```4555```
+* For the second iteration: ```bash``` PID is ```4404``` and that the ```3-show_your_bash_pid_made_easy``` script PID is ```4557```
