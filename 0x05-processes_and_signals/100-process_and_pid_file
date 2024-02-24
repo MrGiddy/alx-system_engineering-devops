@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# Creates a file, catches and handles signals
+
+# Create pid_file and write pid
+pid_file="/var/run/myscript.pid"
+echo $$ > $pid_file
+
+terminate (){	
+    rm -f "$pid_file"
+    exit
+}
+
+while true;
+do
+    echo "To infinity and beyond"
+    sleep 2
+    trap 'echo "Y U no love me?!"' SIGINT
+    trap 'echo "I hate the kill command" && terminate' SIGTERM
+    trap 'terminate' SIGQUIT
+done
