@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Indefinitely writes to /tmp/my_process
+
+output_file="/tmp/my_process"
+message="I am alive!"
+
+while true;
+do
+    echo "$message" >> "$output_file"
+    sleep 2
+done
