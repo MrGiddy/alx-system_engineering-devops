@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Displays username, user id, and Home directory pat
+# of the user from /etc/passwd
+
+file_name=/etc/passwd
+
+while read -r line
+do
+  echo "$line" | cut -d ':' -f 1,3,6
+done < "$file_name"
