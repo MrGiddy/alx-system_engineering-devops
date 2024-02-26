@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# Displays the time for 12 hours and 59 minutes
+# Outer while loop prints Hour: 0 - Hour: 12
+# Inner while loop prints 1 to 59
+
+i=0
+j=1
+while [ "$i" -le 12 ]
+do
+  echo "Hour: $i"
+
+  while [ "$j" -le 60 ]
+  do
+    if [ "$j" == 60 ]; then
+      j=1
+      break
+    else
+      echo "$j"
+    fi
+    ((j++))
+  done
+
+  ((i++))
+done
