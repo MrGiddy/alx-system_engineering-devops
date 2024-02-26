@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Display the content of current working directory
+# in a list format
+# Only the name part after dash is displayed
+
+for file_name in * 
+do
+  trimmed=$(echo "$file_name" | cut -d '-' -f 2-)
+  echo "$trimmed"
+done
