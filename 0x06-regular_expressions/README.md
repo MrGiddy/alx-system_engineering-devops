@@ -55,7 +55,6 @@ $
 ```
 
 ## 1. Repetition Token #0
-
 * Find the regular expression that will match only the cases provided below:
     * hbttn
     * hbtttn
@@ -65,7 +64,19 @@ $
 * Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
 
 ## 2. Repetition Token #1
-
 * Find the regular expression matching only:
     * htn
     * hbtn
+
+* Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
+
+## 3. Repetition Token #2
+Requirements:
+
+Find the regular expression that will match only:
+    * hbtn
+    * hbttn
+    * hbtttn
+    * hbttttn
+
+Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
