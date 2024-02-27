@@ -55,28 +55,44 @@ $
 ```
 
 ## 1. Repetition Token #0
-* Find the regular expression that will match only the cases provided below:
-    * hbttn
-    * hbtttn
-    * hbttttn
-    * hbtttttn
+* Find the regular expression that will:
+    * mkip:  hbn
+    * mkip:  hbtn
+    * match: hbttn
+    * match: hbtttn
+    * match: hbttttn
+    * skip:  hbtttttn
 
 * Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
 
 ## 2. Repetition Token #1
-* Find the regular expression matching only:
-    * htn
-    * hbtn
+* Find the regular expression that will:
+    * match: htn
+    * match: hbtn
+    * skip:  hbbtn
+    * skip:  hbbbtn
 
 * Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
 
 ## 3. Repetition Token #2
-Requirements:
-
-Find the regular expression that will match only:
-    * hbtn
-    * hbttn
-    * hbtttn
-    * hbttttn
+Find the regular expression that will:
+    * skip:  hbn
+    * match: hbtn
+    * match: hbttn
+    * match: hbtttn
+    * match: hbttttn
 
 Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
+
+
+### 4. Repetition Token #3
+Find the regular expression that will:
+    * match: hbn
+    * skip:  hbon
+    * match: hbtn
+    * match: hbttn
+    * match: hbtttn
+    * match: hbttttn
+
+Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching meth
+od
