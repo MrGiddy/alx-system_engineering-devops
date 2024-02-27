@@ -20,11 +20,11 @@ sylvain@ubuntu$ ./example.rb 127.0.0.a
 # Resources
 **Read or watch**:
 
-* Regular expressions - basics
-* Regular expressions - advanced
-* Rubular is your best friend
-* Use a regular expression against a problem: now you have 2 problems
-* Learn Regular Expressions with simple, interactive exercises
+* [Regular expressions - basics](https://www.slideshare.net/neha_jain/introducing-regular-expressions)
+* [Regular expressions - advanced](https://www.slideshare.net/neha_jain/advanced-regular-expressions-80296518)
+* [Rubular is your best friend](https://rubular.com/)
+* [Use a regular expression against a problem: now you have 2 problems](https://blog.codinghorror.com/regular-expressions-now-you-have-two-problems/)
+* [Learn Regular Expressions with simple, interactive exercises](https://regexone.com/)
 
 # Requirements
 ## General
@@ -39,7 +39,6 @@ sylvain@ubuntu$ ./example.rb 127.0.0.a
 # Tasks
 ## 0. Simply matching School
 
-Requirements:
 * The regular expression must match ```School```
 * Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
 
@@ -57,7 +56,6 @@ $
 
 ## 1. Repetition Token #0
 
-Requirements:
 * Find the regular expression that will match only the cases provided below:
     * hbttn
     * hbtttn
@@ -65,3 +63,9 @@ Requirements:
     * hbtttttn
 
 * Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
+
+## 2. Repetition Token #1
+
+* Find the regular expression matching only:
+    * htn
+    * hbtn
