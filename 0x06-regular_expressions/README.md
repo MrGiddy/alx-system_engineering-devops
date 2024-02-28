@@ -84,9 +84,8 @@ Find the regular expression that will:
 
 Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
 
-
-### 4. Repetition Token #3
-Find the regular expression that will:
+## 4. Repetition Token #3
+* Find the regular expression that will:
     * match: hbn
     * skip:  hbon
     * match: hbtn
@@ -94,5 +93,23 @@ Find the regular expression that will:
     * match: hbtttn
     * match: hbttttn
 
-Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching meth
+* Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching meth
 od
+
+## 5. Not quite HBTN yet
+* The regular expression must be exactly matching a string that starts with ```h``` ends with ```n``` and can have any single character in between
+* Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
+
+Example:
+```
+sylvain@ubuntu$ ./5-beginning_and_end.rb 'hn' | cat -e
+$
+sylvain@ubuntu$ ./5-beginning_and_end.rb 'hbn' | cat -e
+hbn$
+sylvain@ubuntu$ ./5-beginning_and_end.rb 'hbtn' | cat -e
+$
+sylvain@ubuntu$ ./5-beginning_and_end.rb 'h8n' | cat -e
+h8n$
+sylvain@ubuntu$
+$
+```
