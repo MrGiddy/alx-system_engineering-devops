@@ -91,12 +91,16 @@ It is organized from the lowest level to the highest level:
 
 Keep in mind that the OSI model is a concept, it’s not even tangible. The OSI model doesn’t perform any functions in the networking process. It is a conceptual framework so we can better understand complex interactions that are happening. Most of the functionality in the OSI model exists in all communications systems.
 
+![](https://github.com/MrGiddy/alx-system_engineering-devops/blob/main/0x07-networking_basics/imgs/0-OSI_Model.JPG)
+
 In this project we will mainly focus on:
 
 * The Transport layer and especially TCP/UDP
 * On the Network layer with IP and ICMP
 
 The image below describes more concretely how you can relate to every level.
+
+![](https://github.com/MrGiddy/alx-system_engineering-devops/blob/main/0x07-networking_basics/imgs/0-Levels.JPG)
 
 Questions:
 
@@ -112,6 +116,8 @@ How is the OSI model organized?
 3. Randomly
 
 ## 1. Types of network
+![](https://github.com/MrGiddy/alx-system_engineering-devops/blob/main/0x07-networking_basics/imgs/1-types_of_network.JPG)
+
 LAN connect local devices together, WAN connects LANs together, and WANs are operating over the Internet.
 
 Questions:
@@ -131,6 +137,9 @@ What network do you use when you browse www.google.com from your smartphone (not
 3. LAN
 
 ## 2. MAC and IP address
+
+![](https://github.com/MrGiddy/alx-system_engineering-devops/blob/main/0x07-networking_basics/imgs/2-MAC_and_IP_address.JPG)
+
 Questions:
 What is a MAC address?
 1. The name of a network interface
@@ -143,6 +152,9 @@ What is an IP address?
 3. Is a number that network devices use to connect to networks
 
 ## 3. UDP and TCP
+
+![](https://github.com/MrGiddy/alx-system_engineering-devops/blob/main/0x07-networking_basics/imgs/UDP_and_TCP.JPG)
+
 Let’s fill the empty parts in the drawing above.
 
 Questions:
