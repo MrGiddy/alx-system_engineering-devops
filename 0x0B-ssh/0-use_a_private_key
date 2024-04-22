@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Uses ssh to connect to a server
-# Server IP: 18.206.206.3
+# Server IP: 34.207.61.201
 # Private key: ~/.ssh/school
 
 ssh -i ~/.ssh/school ubuntu@34.207.61.201
