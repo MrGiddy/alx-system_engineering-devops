@@ -157,3 +157,61 @@ If things are not going as expected, make sure to check out Nginx logs, they can
 sylvain@ubuntu$ sudo su
 root@ubuntu#
 ```
+
+# 2. Setup a domain name
+* Set up a domain name with [.TECH Domains](https://get.tech/) providers
+* Use **GitHub Student Developer Pack** to have a free .tech domain for 1 year
+```
+sylvain@ubuntu$ cat 2-setup_a_domain_name
+myschool.tech
+sylvain@ubuntu$
+sylvain@ubuntu$ dig myschool.tech
+
+; <<>> DiG 9.10.6 <<>> myschool.tech
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 26785
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;myschool.tech.     IN  A
+
+;; ANSWER SECTION:
+myschool.tech.  7199    IN  A   184.72.193.201
+
+;; Query time: 65 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8)
+;; WHEN: Fri Aug 02 09:44:36 PDT 2019
+;; MSG SIZE  rcvd: 65
+
+sylvain@ubuntu$
+```
+
+When your domain name is setup, please verify the Registrar here: [https://whois.whoisxmlapi.com/](https://whois.whoisxmlapi.com/) and you must see in the JSON response: ```"registrarName": "Dotserve Inc"```
+
+## 3. Redirection
+Readme:
+* [Replace a line with multiple lines with sed](https://stackoverflow.com/questions/26041088/sed-replace-line-with-multiline-variable)
+Configure your Nginx server so that ```/redirect_me``` is redirecting to another page.
+
+Requirements:
+* The redirection must be a “301 Moved Permanently”
+* You answer file should be a Bash script containing commands to automatically configure a Ubuntu machine to respect above requirements
+* Using what you did with ```1-install_nginx_web_server```, write ```3-redirection``` so that it configures a brand new Ubuntu machine to the requirements asked in this task
+
+Example:
+
+```
+sylvain@ubuntu$ curl -sI 34.198.248.145/redirect_me/
+HTTP/1.1 301 Moved Permanently
+Server: nginx/1.4.6 (Ubuntu)
+Date: Tue, 21 Feb 2017 21:36:04 GMT
+Content-Type: text/html
+Content-Length: 193
+Connection: keep-alive
+Location: https://www.youtube.com/watch?v=QH2-TGUlwu4
+
+sylvain@ubuntu$
+```
