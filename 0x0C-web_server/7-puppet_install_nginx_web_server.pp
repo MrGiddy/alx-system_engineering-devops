@@ -8,13 +8,7 @@ exec { 'apt-update':
 
 package {'nginx':
   ensure          => installed,
-  install_options => [y],
-}
-
-file {'landing_page':
-  ensure  => file,
-  path    => '/var/www/html/index.nginx-debian.html',
-  content => "Hello World!\n",
+  install_options => ['-y'],
 }
 
 file {'404_page':
@@ -31,9 +25,11 @@ file {'dflt_server_block':
     listen 80 default_server;
     listen [::]:80 default_server;
 
+    root /var/www/html;
+    index index.nginx-debian.html;
+
     location / {
-	root /var/www/html;
-	index index.nginx-debian.html;
+        return 200 "Hello World!\n";
     }
 
     location /redirect_me {
@@ -51,5 +47,4 @@ file {'dflt_server_block':
 service {'nginx':
   ensure    => 'running',
   enable    => true,
-  subscribe => File['landing_page'],
 }
