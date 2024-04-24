@@ -4,6 +4,7 @@ apt update
 apt install -y nginx
 
 echo "Hello World!" > /var/www/html/index.nginx-debian.html
+echo "Ceci n'est pas une page\n" > /var/www/html/custom_404.html
 
 echo "server {
     listen 80 default_server;
