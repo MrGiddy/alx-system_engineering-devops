@@ -45,7 +45,6 @@ backend hbnb-http-back
         server web-02 52.91.178.2
 EOL
 
-
 # Enable HAProxy to be managed via init script
 service haproxy enable
 
