@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# Displays information about a website's subdomains
+
+DOMAIN="$1"   # The domain name
+NUMARGS="$#"  # Number of cmd line arguments passed
+
+domain_info () {
+    # When called, will print info. of each subdomain of the domain
+    for subdomain in www lb-01 web-01 web-02; do
+        RECORD=$(dig "$subdomain"."$DOMAIN" | grep -A1 "ANSWER SECTION" | awk '{print $4}' | tail -1)
+        IP=$(dig "$subdomain"."$DOMAIN" | grep -A1 "ANSWER SECTION" | awk '{print $5}' | tail -1)
+
+        echo "The subdomain $subdomain is a $RECORD record and points to $IP"
+    done
+}
+
+# If exactly one arg (the domain name) is passed
+if [ "$NUMARGS" -eq 1 ]; then
+    domain_info
+else
+    # If two or more args (domain-name, subdomain name,... ) are passed
+    SUBDOMAIN="$2"
+    RECORD=$(dig "$SUBDOMAIN"."$DOMAIN" | grep -A1 "ANSWER SECTION" | awk '{print $4}' | tail -1)
+    IP=$(dig "$SUBDOMAIN"."$DOMAIN" | grep -A1 "ANSWER SECTION" | awk '{print $5}' | tail -1)
+
+    echo "The subdomain $SUBDOMAIN is a $RECORD record and points to $IP"
+fi
