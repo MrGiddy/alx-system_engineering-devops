@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Run software as another user
+USR="$1"
+su "$USR" -c whoami
