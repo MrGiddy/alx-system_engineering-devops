@@ -33,7 +33,7 @@ root
 root@ubuntu:~#
 ```
 
-# 1. Run Nginx as Nginx
+## 1. Run Nginx as Nginx
 The ```root``` user is a superuser that can do anything on a Unix machine, the top administrator. Security wise, you must do everything that you can to prevent an attacker from logging in as ```root```. With this in mind, it’s a good practice not to run your web servers as ```root``` (which is the default for most configurations) and instead run the process as the less privileged ```nginx``` user instead. This way, if a hacker does find a security issue that allows them to break-in to your server, the impact is limited by the permissions of the ```nginx``` user.
 
 Fix this container so that Nginx is running as the ```nginx``` user.
@@ -58,3 +58,16 @@ root@ab6f4542747e:~# nc -z 0 8080 ; echo $?
 0
 root@ab6f4542747e:~#
 ```
+
+## 2. 7 lines or less
+Using what you did for task #1, make your fix short and sweet.
+
+Requirements:
+
+* Your Bash script must be 7 lines long or less
+* There must be a new line at the end of the file
+* You respect Bash script requirements
+* You cannot use ```;```
+* You cannot use ```&&```
+* You cannot use ```wget```
+* You cannot execute your previous answer file (Do not include the name of the previous script in this one)
