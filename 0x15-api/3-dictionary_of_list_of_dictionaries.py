@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Defines a function that gathers progress data from an API"""
+"""Defines a function that gathers tasks data from an API"""
 import json
 import requests
 
