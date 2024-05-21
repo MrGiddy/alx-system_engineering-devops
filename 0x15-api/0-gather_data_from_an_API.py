@@ -3,7 +3,7 @@
 import requests
 
 
-def gather_todo_progress(id):
+def display_todo_progress(id):
     """Returns information about an employees todo list progress"""
     # Get the employee's name
     r = requests.get(f'https://jsonplaceholder.typicode.com/users?id={id}')
@@ -28,4 +28,4 @@ if __name__ == '__main__':
     import sys
 
     id = int(sys.argv[1])
-    gather_todo_progress(id)
+    display_todo_progress(id)
