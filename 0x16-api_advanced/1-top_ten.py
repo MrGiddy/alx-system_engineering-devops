@@ -12,7 +12,8 @@ def top_ten(subreddit):
     headers = {"User-Agent": 'MyApp:v1.0'}
     params = {'limit': 10}
 
-    resp = requests.get(url, headers=headers, params=params, allow_redirects=False)
+    resp = requests.get(url, headers=headers, params=params,
+                        allow_redirects=False)
     if resp.status_code == 200:
         data = resp.json()
         hot_posts = data['data']['children']
