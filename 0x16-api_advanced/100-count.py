@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
 Defines a function that parses the title of all hot articles,
 and prints a sorted count of given keywords
