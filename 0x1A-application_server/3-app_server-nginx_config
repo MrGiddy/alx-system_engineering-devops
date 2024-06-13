@@ -1,0 +1,37 @@
+server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+    server_name 34.207.61.201;
+
+    add_header X-Served-By $hostname;
+    add_header Content-Type text/html;
+
+    # Proxy requests to Gunicorn instance on port 5000
+    location /airbnb-onepage/ {
+        proxy_pass http://127.0.0.1:5000;
+    }
+
+    # Proxy requests to Gunicorn instance on port 5001
+    location ~ ^/airbnb-dynamic/number_odd_or_even/(\d)+$ {
+        proxy_pass http://127.0.0.1:5001/number_odd_or_even/$1;
+    }
+
+    location / {
+        return 200 'Holberton School\n';
+    }
+
+    location /hbnb_static/ {
+        alias /data/web_static/current/;
+        index index.html index.htm;
+    }
+
+    location /redirect_me {
+        return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
+    }
+
+    error_page 404 /custom_404.html;
+    location = /custom_404.html {
+        root /var/www/html;
+        internal;
+    }
+}
